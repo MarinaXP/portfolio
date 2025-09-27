@@ -631,23 +631,28 @@ color: var(--color-text-primary);
   /* Styles pour la version mobile du menu */
   .nav-menu {
     position: fixed;
-        top: -100vh; 
-        left: 0;
-        width: 100%; 
-        height: 60vh;
+    top: -100vh; 
+    left: 0;
+    width: 100vw; 
+    height: 60vh;
     background-color: var(--color-text-muted-transparant);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: top 0.3s ease-in-out;
+    gap: var(--spacing-sm); 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
   }
 
    .nav-menu.active {
-        top: 0; /* Fait glisser le menu vers le bas pour l'afficher */
+        top: 0; 
     }
 
   .nav-menu li {
     margin-bottom: 20px;
+    width: auto; 
   }
 
   /* Affiche la croix de fermeture lorsque le menu est actif */
